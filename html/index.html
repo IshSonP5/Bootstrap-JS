@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lee Goldman</title>
+  <link rel="stylesheet" href="css\styles.css" />
+</head>
+<body data-spy="scroll" data-target=".navbar" class="loading-screen">
+<!-- Navigation ****************************************************** -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a class="brand" href="#page-top">
+      <img src="images\LG.gif" alt="LG">
+    </a>
+    <button  type="button" data-toggle="collapse" data-target="navbarNavAltMarkup" 
+     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="toggle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse-navbar" id="navbarNavAltMarkup">
+      <div class="nav-items">
+        <a class="nav-item nav-link active ts-scroll" href="#page-top">Home <span class="only">(current)</span></a>
+        <a class="nav-item nav-link ts-scroll" href="#about-me">About Me</a>
+        <a class="nav-item nav-link ts-scroll" href="#projects">Projects</a>
+        <a class="nav-item nav-link ts-scroll contact" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Hero Section ***************************************************** -->
+  <section class="main-hero">
+    <div class="social-icons">
+      <figure class="ts-socials">
+        <a href="#" class="mr-1">
+          <i class="facebook"></i>
+        </a>
+        <a href="#" class="mr-1">
+          <i class="instagram"></i>
+        </a>
+        <a href="#" class="mr-1">
+          <i class="twitter"></i>
+        </a>
+      </figure>
+      <h1>I am Lee Goldman</h1>
+      <h1 class="bubble=border">
+        <span class="rotate">
+          <span class="active">Designer</span>
+          <span>Creative</span>
+          <span>Exciting</span>
+        </span>
+      </h1>
+    </div>
+    <div class="hero-background">
+      <div class="hero-background-image" data-bg-image="images\Paper-4.jpg"></div>
+  </div>
+  </section>
+  <!-- end hero - begin About Me************************************** -->
+  <section class="aboutme" id="about-me">
+    <div class="container">
+      <div class="about-title">
+        <h2>About Me</h2>
+      </div>
+      <div class="align">
+        <div class="my-image">
+          <img src="" alt="" class="look-at-me"> <!-- add image -->
+        </div>
+      </div>
+      <div class="h4-p-wrapper">
+          <h4>Hey There!</h4>
+          <p>
+            I am Lee Goldman and I am a web developer, software engineer,
+            designer, photographer and producer.  I love to get involved
+            in creative projects.  Look around and if you like what you see
+            contact me.
+          </p>
+        <dl class="column-2-list">
+            <dt>Name:</dt>
+            <dd>Lee Goldman</dd>
+            <dt>Phone:</dt>
+            <dd>+1 555-555-5555</dd>
+            <dt>Email:</dt>
+            <dd>hello@example.com</dd>
+        </dl>
+        <hr class="page-break">
+        <a href="#contact" class="btn-effect mr-1">
+          <span class="ts-visible btn btn-primary ts-btn-arrow">Contact Me</span>
+          <span class="ts-hidden btn btn-primary ts-btn-arrow" data-bg-color="#d44729">Contact Me</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="block">
+    <div class="container block">
+      <h3>
+        Let's Work Together!
+      </h3>
+      <a href="#contact" class="btn btn-primary mr-1">Hire Me</a>
+      <div class="block-bg" data-bg-image=""></div>
+    </div>
+  </section>
+  <!-- end About Me - begin Contact -->
+  <footer class="footer" id="footfoot">
+    <section id="contact" class="contact-block" data-bg-image="" data-bg-image-opacity=".1">
+      <div class="adress-container" data-animate="ts-fadeInUp">
+        <img src="" class="contact-image" alt=""> <!-- add image -->
+        <h5>Adress</h5>
+          <figure class="adress">999 Hampton St</figure>
+          <figure>Township, ID 55555</figure>
+      </div>
+      <div class="phone-container" data-animate="ts-fadeInUp" data-delay=".1s">
+        <img src="" class="phone-main" alt="">
+        <h5>Phone</h5>
+        <div class="phone-number">
+          <figure class="phone">+1 555-555-5555</figure>
+        </div>
+      </div>
+      <hr class="page-break">
+      <!-- contact form -->
+      <div class="foot-container">
+        <div class="connect-with-me">
+          <h3>Let's Connect</h3>
+        </div>
+        <div class="message-me">
+          <form id="form-contact" method="post" class="clear-form" data-php-path="email.php">
+            <!-- name -->
+            <div class="form-group">
+              <label for="form-contact-name">Name *</label>
+              <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Name" required>
+            </div>
+            <!-- email -->
+            <div class="form-group">
+              <label for="form-contact-email">Email *</label>
+              <input type="text" class="form-control" id="form-contact-email" name="email" placeholder="Email" required>
+            </div>
+            <!-- subject -->
+            <div class="form-group">
+              <label for="form-contact-subject">Subject *</label>
+              <input type="text" class="form-control" id="form-contact-subject" name="subject" placeholder="Subject" required>
+            </div>
+            <!-- message -->
+            <div class="form-group">
+              <label for="form-contact-message">Message *</label>
+              <input type="text" class="form-control" id="form-contact-messsage" name="message" placeholder="Message" required>
+            </div>
+            <!-- submit button -->
+            <div class="form-group clearstatus">
+              <button type="submit" class="btn btn-primary" id="form-contact-submit">Send The Message!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+</body>
+</html>

@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lee Goldman</title>
-  <link rel="stylesheet" href="css\styles.css" />
+  <link rel="stylesheet" href="css\animations.css" />
 </head>
 <body data-spy="scroll" data-target=".navbar" class="loading-screen">
 <!-- Navigation ****************************************************** -->
 <nav class="navbar">
   <div class="nav-container">
     <a class="brand" href="#page-top">
-      <img src="images\LG.gif" alt="LG">
+      <img  class="navimage" src="\images\LG.gif" alt="LG"> <!-- add image -->
     </a>
     <button  type="button" data-toggle="collapse" data-target="navbarNavAltMarkup" 
      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="toggle">
@@ -99,11 +99,14 @@
       <div class="block-bg" data-bg-image=""></div>
     </div>
   </section>
-  <!-- end About Me - begin Contact -->
+  <!-- end About Me - begin projects -->
+
+
+  <!-- end projects - begin contact  -->
   <footer class="footer" id="footfoot">
     <section id="contact" class="contact-block" data-bg-image="" data-bg-image-opacity=".1">
       <div class="adress-container" data-animate="ts-fadeInUp">
-        <img src="" class="contact-image" alt=""> <!-- add image -->
+        <img src="\images\Paper-4.jpg" class="contact-image" alt=""> <!-- add image -->
         <h5>Adress</h5>
           <figure class="adress">999 Hampton St</figure>
           <figure>Township, ID 55555</figure>
@@ -122,7 +125,7 @@
           <h3>Let's Connect</h3>
         </div>
         <div class="message-me">
-          <form id="form-contact" method="post" class="clear-form" data-php-path="email.php">
+          <form id="form-contact" method="post" class="form-row" data-php-path="email.php">
             <!-- name -->
             <div class="form-group">
               <label for="form-contact-name">Name *</label>
@@ -133,18 +136,13 @@
               <label for="form-contact-email">Email *</label>
               <input type="text" class="form-control" id="form-contact-email" name="email" placeholder="Email" required>
             </div>
-            <!-- subject -->
-            <div class="form-group">
-              <label for="form-contact-subject">Subject *</label>
-              <input type="text" class="form-control" id="form-contact-subject" name="subject" placeholder="Subject" required>
-            </div>
             <!-- message -->
             <div class="form-group">
               <label for="form-contact-message">Message *</label>
-              <input type="text" class="form-control" id="form-contact-messsage" name="message" placeholder="Message" required>
+              <textarea class="form-control" id="form-contact-messsage" name="message" placeholder="Message" required></textarea>
             </div>
             <!-- submit button -->
-            <div class="form-group clearstatus">
+            <div class="form-group status">
               <button type="submit" class="btn btn-primary" id="form-contact-submit">Send The Message!</button>
             </div>
           </form>
